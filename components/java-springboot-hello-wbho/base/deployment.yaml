@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: java-springboot-hello-wbho
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:eric-deandrea-tenant-java-springboot-hello-wbho
+      - image: quay.io/redhat-appstudio/user-workload@sha256:451676b2a4d4604e386595b25f5f4e5aca748452ba58a5cdff360d0b11d51bb3
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
