@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-wbho
+  namespace: eric-deandrea-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:451676b2a4d4604e386595b25f5f4e5aca748452ba58a5cdff360d0b11d51bb3
+        name: container-image
+        resources: {}
+status: {}
